@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "ruby",
+  "ingredients": [
+    {
+      "item": "thewitcher:ruby_block"
+    }
+  ],
+  "result": {
+    "item": "thewitcher:ruby",
+    "count": 9
+  }
+}

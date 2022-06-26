@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "ruby",
+  "ingredient": {
+    "item": "thewitcher:raw_ruby"
+  },
+  "result": "thewitcher:ruby",
+  "experience": 0.9,
+  "cookingtime": 400
+}

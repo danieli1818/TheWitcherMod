@@ -1,8 +1,12 @@
 package me.danieli1818.thewitcher;
 
 import com.mojang.logging.LogUtils;
+
+import me.danieli1818.thewitcher.block.ModBlocks;
+import me.danieli1818.thewitcher.item.ModItems;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -21,8 +25,13 @@ public class TheWitcher
     public TheWitcher()
     {
         // Register the setup method for modloading
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-
+        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+        
+		modEventBus.addListener(this::setup);
+        
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
