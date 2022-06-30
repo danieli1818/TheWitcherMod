@@ -3,6 +3,7 @@ package me.danieli1818.thewitcher.block;
 import com.google.common.base.Supplier;
 
 import me.danieli1818.thewitcher.TheWitcher;
+import me.danieli1818.thewitcher.block.custom.SpeedyBlock;
 import me.danieli1818.thewitcher.item.ModCreativeModeTab;
 import me.danieli1818.thewitcher.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -47,5 +48,9 @@ public class ModBlocks {
 	public static final RegistryObject<Block> CITRINE_BLOCK = registerBlock("citrine_block", () -> 
 	new Block(BlockBehaviour.Properties.of(Material.STONE).strength(4.25F, 5.0F)
 			.requiresCorrectToolForDrops().sound(SoundType.STONE)), ModCreativeModeTab.MINERALS_TAB);
+	
+	public static final RegistryObject<Block> SPEEDY_BLOCK = registerBlock("speedy_block", () -> 
+	new SpeedyBlock(BlockBehaviour.Properties.of(Material.STONE).strength(4.0F, 5.0F)
+			.requiresCorrectToolForDrops().sound(SoundType.STONE)), ModCreativeModeTab.EXAMPLES_TAB);
 	
 }

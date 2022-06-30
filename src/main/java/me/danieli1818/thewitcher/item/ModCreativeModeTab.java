@@ -13,4 +13,12 @@ public class ModCreativeModeTab {
 		}
 	};
 	
+	public static final CreativeModeTab EXAMPLES_TAB = new CreativeModeTab("examples") {
+		
+		@Override
+		public ItemStack makeIcon() {
+			return new ItemStack(ModItems.DOWSING_ROD.get());
+		}
+	};
+	
 }
