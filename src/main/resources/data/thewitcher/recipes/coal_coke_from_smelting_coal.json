@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "tag": "forge:rocks/coal"
+  },
+  "result": "thewitcher:coal_coke",
+  "experience": 0.3,
+  "cookingtime": 100
+}

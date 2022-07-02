@@ -1,16 +1,22 @@
 package me.danieli1818.thewitcher.item.custom;
 
-import me.danieli1818.thewitcher.block.ModBlocks;
+import java.util.List;
+
+import me.danieli1818.thewitcher.util.ModTags;
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
+import net.minecraftforge.registries.ForgeRegistries;
 
 public class DowsingRodItem extends Item {
 
@@ -54,9 +60,17 @@ public class DowsingRodItem extends Item {
 	}
 	
 	private boolean isValuableBlock(Block block) {
-		return block == Blocks.COAL_ORE || block == Blocks.IRON_ORE || block == Blocks.GOLD_ORE || 
-				block == Blocks.DIAMOND_ORE || block == Blocks.LAPIS_ORE || 
-				block == ModBlocks.CITRINE_BLOCK.get() || block == ModBlocks.RUBY_BLOCK.get();
+		return ForgeRegistries.BLOCKS.tags().getTag(ModTags.Blocks.DOWSING_ROD_VALUABLES).contains(block);
+	}
+	
+	@Override
+	public void appendHoverText(ItemStack pStack, Level pLevel, List<Component> pTooltipComponents,
+			TooltipFlag pIsAdvanced) {
+		if (Screen.hasShiftDown()) {
+			pTooltipComponents.add(new TranslatableComponent("tooltip.thewitcher.dowsing_rod.tooltip.shift"));
+		} else {
+			pTooltipComponents.add(new TranslatableComponent("tooltip.thewitcher.dowsing_rod.tooltip"));
+		}
 	}
 	
 	

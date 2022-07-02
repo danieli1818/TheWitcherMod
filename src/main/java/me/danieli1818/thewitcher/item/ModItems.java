@@ -5,6 +5,7 @@ import com.google.common.base.Supplier;
 import me.danieli1818.thewitcher.TheWitcher;
 import me.danieli1818.thewitcher.item.custom.DowsingRodItem;
 import me.danieli1818.thewitcher.item.custom.LanternItem;
+import me.danieli1818.thewitcher.item.custom.fuel.CoalCokeItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -43,6 +44,9 @@ public final class ModItems {
 	
 	public static final RegistryObject<Item> CUCUMBER = registerItem("cucumber", 
 			() -> new Item(new Item.Properties().tab(ModCreativeModeTab.EXAMPLES_TAB).food(ModFoods.CUCUMBER)));
+	
+	public static final RegistryObject<Item> COAL_COKE = registerItem("coal_coke", 
+			() -> new CoalCokeItem(new Item.Properties().tab(ModCreativeModeTab.MINERALS_TAB)));
 
 	
 }

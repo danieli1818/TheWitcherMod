@@ -1,5 +1,7 @@
 package me.danieli1818.thewitcher.block;
 
+import java.util.List;
+
 import com.google.common.base.Supplier;
 
 import me.danieli1818.thewitcher.TheWitcher;
@@ -18,6 +20,12 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.world.item.TooltipFlag;
+
 public class ModBlocks {
 
 	private ModBlocks() {
@@ -26,6 +34,20 @@ public class ModBlocks {
 	
 	public static void register(IEventBus eventBus) {
 		BLOCKS.register(eventBus);
+	}
+	
+	private static RegistryObject<Block> registerBlock(String name, Supplier<? extends Block> blockSupplier, CreativeModeTab tab, String tooltip) {
+		RegistryObject<Block> blockRegistry = BLOCKS.register(name, blockSupplier);
+		registerBlockItem(name, blockRegistry, tab, tooltip);
+		return blockRegistry;
+	}
+	
+	private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block, CreativeModeTab tab, String tooltip) {
+		return ModItems.registerItem(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)) {
+			public void appendHoverText(ItemStack pStack, Level pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+				pTooltip.add(new TranslatableComponent(tooltip));
+			};
+		});
 	}
 	
 	private static RegistryObject<Block> registerBlock(String name, Supplier<? extends Block> blockSupplier, CreativeModeTab tab) {
@@ -51,6 +73,6 @@ public class ModBlocks {
 	
 	public static final RegistryObject<Block> SPEEDY_BLOCK = registerBlock("speedy_block", () -> 
 	new SpeedyBlock(BlockBehaviour.Properties.of(Material.STONE).strength(4.0F, 5.0F)
-			.requiresCorrectToolForDrops().sound(SoundType.STONE)), ModCreativeModeTab.EXAMPLES_TAB);
+			.requiresCorrectToolForDrops().sound(SoundType.STONE)), ModCreativeModeTab.EXAMPLES_TAB, "tooltip.thewitcher.block.speedy_block");
 	
 }
