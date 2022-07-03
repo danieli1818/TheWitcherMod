@@ -9,7 +9,17 @@
 	"item.thewitcher.coal_coke": "Coal Coke",
 	
 	"block.thewitcher.ruby_block": "Ruby Block",
+	"block.thewitcher.ruby_stairs": "Ruby Stairs",
+	"block.thewitcher.ruby_slab": "Ruby Slab",
+	"block.thewitcher.ruby_fence": "Ruby Fence",
+	"block.thewitcher.ruby_fence_gate": "Ruby Fence Gate",
+	"block.thewitcher.ruby_wall": "Ruby Wall",
 	"block.thewitcher.citrine_block": "Citrine Block",
+	"block.thewitcher.citrine_stairs": "Citrine Stairs",
+	"block.thewitcher.citrine_slab": "Citrine Slab",
+	"block.thewitcher.citrine_fence": "Citrine Fence",
+	"block.thewitcher.citrine_fence_gate": "Citrine Fence Gate",
+	"block.thewitcher.citrine_wall": "Citrine Wall",
 	"block.thewitcher.speedy_block": "Speedy Block",
 	
 	"itemGroup.minerals": "Minerals",

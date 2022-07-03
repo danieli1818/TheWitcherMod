@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "thewitcher:block/citrine_block",
+    "top": "thewitcher:block/citrine_block",
+    "side": "thewitcher:block/citrine_block"
+  }
+}
