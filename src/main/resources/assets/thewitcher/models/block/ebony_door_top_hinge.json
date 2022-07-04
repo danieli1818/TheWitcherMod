@@ -1,7 +1,20 @@
 {
-  "parent": "minecraft:block/door_top_rh",
-  "textures": {
-    "top": "thewitcher:block/ebony_door_top",
-    "bottom": "thewitcher:block/ebony_door_bottom"
-  }
+	"ambientocclusion": false,
+	"textures": {
+		"top": "thewitcher:block/ebony_door_top",
+		"particle": "#top"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [3, 16, 16],
+			"faces": {
+				"north": {"uv": [2, 0, 0, 16], "texture": "#top", "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#top"},
+				"south": {"uv": [5, 9, 7, 16], "texture": "#top", "cullface": "south"},
+				"west": {"uv": [16, 0, 0, 16], "texture": "#top", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 2], "rotation": 270, "texture": "#top", "cullface": "up"}
+			}
+		}
+	]
 }
