@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_rh",
+  "textures": {
+    "top": "thewitcher:block/ebony_door_top",
+    "bottom": "thewitcher:block/ebony_door_bottom"
+  }
+}

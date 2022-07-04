@@ -12,11 +12,16 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.FenceBlock;
 import net.minecraft.world.level.block.FenceGateBlock;
+import net.minecraft.world.level.block.PressurePlateBlock;
+import net.minecraft.world.level.block.PressurePlateBlock.Sensitivity;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.StoneButtonBlock;
+import net.minecraft.world.level.block.TrapDoorBlock;
 import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -73,53 +78,78 @@ public class ModBlocks {
 			TheWitcher.MOD_ID);
 
 	public static final RegistryObject<Block> RUBY_BLOCK = registerBlock("ruby_block",
-			() -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(4.5F, 5.4F)
+			() -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(4.5F, 5.4F)
 					.requiresCorrectToolForDrops().sound(SoundType.STONE)),
 			ModCreativeModeTab.MINERALS_TAB);
 	public static final RegistryObject<Block> RUBY_STAIRS = registerBlock("ruby_stairs",
 			() -> new StairBlock(() -> ModBlocks.CITRINE_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties
-					.of(Material.STONE).strength(4.25F, 5.0F).requiresCorrectToolForDrops().sound(SoundType.STONE)),
+					.of(Material.METAL).strength(4.25F, 5.0F).requiresCorrectToolForDrops().sound(SoundType.METAL)),
 			ModCreativeModeTab.MINERALS_TAB);
 	public static final RegistryObject<Block> RUBY_SLAB = registerBlock("ruby_slab",
-			() -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).strength(4.25F, 5.0F)
-					.requiresCorrectToolForDrops().sound(SoundType.STONE)),
+			() -> new SlabBlock(BlockBehaviour.Properties.of(Material.METAL).strength(4.25F, 5.0F)
+					.requiresCorrectToolForDrops().sound(SoundType.METAL)),
 			ModCreativeModeTab.MINERALS_TAB);
 	public static final RegistryObject<Block> RUBY_FENCE = registerBlock("ruby_fence",
-			() -> new FenceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(4.25F, 5.0F)
-					.requiresCorrectToolForDrops().sound(SoundType.STONE)),
+			() -> new FenceBlock(BlockBehaviour.Properties.of(Material.METAL).strength(4.25F, 5.0F)
+					.requiresCorrectToolForDrops().sound(SoundType.METAL)),
 			ModCreativeModeTab.MINERALS_TAB);
 	public static final RegistryObject<Block> RUBY_FENCE_GATE = registerBlock("ruby_fence_gate",
-			() -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.STONE).strength(4.25F, 5.0F)
-					.requiresCorrectToolForDrops().sound(SoundType.STONE)),
+			() -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.METAL).strength(4.25F, 5.0F)
+					.requiresCorrectToolForDrops().sound(SoundType.METAL)),
 			ModCreativeModeTab.MINERALS_TAB);
 	public static final RegistryObject<Block> RUBY_WALL = registerBlock("ruby_wall",
-			() -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).strength(4.25F, 5.0F)
-					.requiresCorrectToolForDrops().sound(SoundType.STONE)),
+			() -> new WallBlock(BlockBehaviour.Properties.of(Material.METAL).strength(4.25F, 5.0F)
+					.requiresCorrectToolForDrops().sound(SoundType.METAL)),
+			ModCreativeModeTab.MINERALS_TAB);
+	public static final RegistryObject<Block> RUBY_BUTTON = registerBlock("ruby_button",
+			() -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.METAL).strength(4.25F, 5.0F)
+					.requiresCorrectToolForDrops().sound(SoundType.METAL).noCollission()),
+			ModCreativeModeTab.MINERALS_TAB);
+	public static final RegistryObject<Block> RUBY_PRESSURE_PLATE = registerBlock("ruby_pressure_plate",
+			() -> new PressurePlateBlock(Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.METAL).strength(4.25F, 5.0F)
+					.requiresCorrectToolForDrops().sound(SoundType.METAL)),
 			ModCreativeModeTab.MINERALS_TAB);
 
 	public static final RegistryObject<Block> CITRINE_BLOCK = registerBlock("citrine_block",
-			() -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(4.25F, 5.0F)
-					.requiresCorrectToolForDrops().sound(SoundType.STONE)),
+			() -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(4.25F, 5.0F)
+					.requiresCorrectToolForDrops().sound(SoundType.METAL)),
 			ModCreativeModeTab.MINERALS_TAB);
 	public static final RegistryObject<Block> CITRINE_STAIRS = registerBlock("citrine_stairs",
 			() -> new StairBlock(() -> ModBlocks.CITRINE_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties
-					.of(Material.STONE).strength(4.25F, 5.0F).requiresCorrectToolForDrops().sound(SoundType.STONE)),
+					.of(Material.METAL).strength(4.25F, 5.0F).requiresCorrectToolForDrops().sound(SoundType.METAL)),
 			ModCreativeModeTab.MINERALS_TAB);
 	public static final RegistryObject<Block> CITRINE_SLAB = registerBlock("citrine_slab",
-			() -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).strength(4.25F, 5.0F)
-					.requiresCorrectToolForDrops().sound(SoundType.STONE)),
+			() -> new SlabBlock(BlockBehaviour.Properties.of(Material.METAL).strength(4.25F, 5.0F)
+					.requiresCorrectToolForDrops().sound(SoundType.METAL)),
 			ModCreativeModeTab.MINERALS_TAB);
 	public static final RegistryObject<Block> CITRINE_FENCE = registerBlock("citrine_fence",
-			() -> new FenceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(4.25F, 5.0F)
-					.requiresCorrectToolForDrops().sound(SoundType.STONE)),
+			() -> new FenceBlock(BlockBehaviour.Properties.of(Material.METAL).strength(4.25F, 5.0F)
+					.requiresCorrectToolForDrops().sound(SoundType.METAL)),
 			ModCreativeModeTab.MINERALS_TAB);
 	public static final RegistryObject<Block> CITRINE_FENCE_GATE = registerBlock("citrine_fence_gate",
-			() -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.STONE).strength(4.25F, 5.0F)
-					.requiresCorrectToolForDrops().sound(SoundType.STONE)),
+			() -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.METAL).strength(4.25F, 5.0F)
+					.requiresCorrectToolForDrops().sound(SoundType.METAL)),
 			ModCreativeModeTab.MINERALS_TAB);
 	public static final RegistryObject<Block> CITRINE_WALL = registerBlock("citrine_wall",
-			() -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).strength(4.25F, 5.0F)
-					.requiresCorrectToolForDrops().sound(SoundType.STONE)),
+			() -> new WallBlock(BlockBehaviour.Properties.of(Material.METAL).strength(4.25F, 5.0F)
+					.requiresCorrectToolForDrops().sound(SoundType.METAL)),
+			ModCreativeModeTab.MINERALS_TAB);
+	public static final RegistryObject<Block> CITRINE_BUTTON = registerBlock("citrine_button",
+			() -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.METAL).strength(4.25F, 5.0F)
+					.requiresCorrectToolForDrops().sound(SoundType.METAL).noCollission()),
+			ModCreativeModeTab.MINERALS_TAB);
+	public static final RegistryObject<Block> CITRINE_PRESSURE_PLATE = registerBlock("citrine_pressure_plate",
+			() -> new PressurePlateBlock(Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.METAL).strength(4.25F, 5.0F)
+					.requiresCorrectToolForDrops().sound(SoundType.METAL)),
+			ModCreativeModeTab.MINERALS_TAB);
+	
+	public static final RegistryObject<Block> EBONY_DOOR = registerBlock("ebony_door",
+			() -> new DoorBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(4.25F, 5.0F)
+					.requiresCorrectToolForDrops().sound(SoundType.STONE).noOcclusion()),
+			ModCreativeModeTab.MINERALS_TAB);
+	public static final RegistryObject<Block> EBONY_TRAPDOOR = registerBlock("ebony_trapdoor",
+			() -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(4.25F, 5.0F)
+					.requiresCorrectToolForDrops().sound(SoundType.STONE).noOcclusion()),
 			ModCreativeModeTab.MINERALS_TAB);
 
 	public static final RegistryObject<Block> SPEEDY_BLOCK = registerBlock("speedy_block",
