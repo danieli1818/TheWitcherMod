@@ -14,11 +14,13 @@ public class ModTags {
 		
 		public static final TagKey<Block> DOWSING_ROD_VALUABLES = tag("dowsing_rod_valuables");
 		
+		public static final TagKey<Block> NEEDS_RUBY_TOOL = forgeTag("needs_ruby_tool");
+		public static final TagKey<Block> NEEDS_CITRINE_TOOL = forgeTag("needs_citrine_tool");
+		
 		private static TagKey<Block> tag(String name) {
 			return BlockTags.create(new ResourceLocation(TheWitcher.MOD_ID, name));
 		}
 		
-		@SuppressWarnings("unused")
 		private static TagKey<Block> forgeTag(String name) {
 			return BlockTags.create(new ResourceLocation("forge", name));
 		}

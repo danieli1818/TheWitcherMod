@@ -21,4 +21,20 @@ public class ModCreativeModeTab {
 		}
 	};
 	
+	public static final CreativeModeTab MOD_TOOLS_TAB = new CreativeModeTab("mod_tools") {
+		
+		@Override
+		public ItemStack makeIcon() {
+			return new ItemStack(ModItems.CITRINE_PICKAXE.get());
+		}
+	};
+	
+	public static final CreativeModeTab WEAPONS_TAB = new CreativeModeTab("weapons") {
+		
+		@Override
+		public ItemStack makeIcon() {
+			return new ItemStack(ModItems.CITRINE_SWORD.get());
+		}
+	};
+	
 }
