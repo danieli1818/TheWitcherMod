@@ -37,4 +37,12 @@ public class ModCreativeModeTab {
 		}
 	};
 	
+	public static final CreativeModeTab ARMOR_TAB = new CreativeModeTab("armor") {
+		
+		@Override
+		public ItemStack makeIcon() {
+			return new ItemStack(ModItems.RUBY_CHESTPLATE.get());
+		}
+	};
+	
 }

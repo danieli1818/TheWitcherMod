@@ -9,6 +9,8 @@ import me.danieli1818.thewitcher.item.custom.fuel.CoalCokeItem;
 import me.danieli1818.thewitcher.item.custom.weapons.SteelSwordItem;
 import me.danieli1818.thewitcher.item.custom.weapons.attributes.EffectAttribute;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
@@ -67,6 +69,19 @@ public final class ModItems {
 	public static final RegistryObject<Item> RUBY_HOE = registerItem("ruby_hoe",
 			() -> new HoeItem(ModTiers.RUBY, 0, 0f, new Item.Properties().tab(ModCreativeModeTab.MOD_TOOLS_TAB)));
 
+	public static final RegistryObject<Item> RUBY_HELMET = registerItem("ruby_helmet",
+			() -> new ArmorItem(ModArmorMaterials.RUBY, EquipmentSlot.HEAD,
+					new Item.Properties().tab(ModCreativeModeTab.ARMOR_TAB)));
+	public static final RegistryObject<Item> RUBY_CHESTPLATE = registerItem("ruby_chestplate",
+			() -> new ArmorItem(ModArmorMaterials.RUBY, EquipmentSlot.CHEST,
+					new Item.Properties().tab(ModCreativeModeTab.ARMOR_TAB)));
+	public static final RegistryObject<Item> RUBY_LEGGINGS = registerItem("ruby_leggings",
+			() -> new ArmorItem(ModArmorMaterials.RUBY, EquipmentSlot.LEGS,
+					new Item.Properties().tab(ModCreativeModeTab.ARMOR_TAB)));
+	public static final RegistryObject<Item> RUBY_BOOTS = registerItem("ruby_boots",
+			() -> new ArmorItem(ModArmorMaterials.RUBY, EquipmentSlot.FEET,
+					new Item.Properties().tab(ModCreativeModeTab.ARMOR_TAB)));
+
 	public static final RegistryObject<Item> CITRINE_SWORD = registerItem("citrine_sword",
 			() -> new SwordItem(ModTiers.CITRINE, 2, 3f, new Item.Properties().tab(ModCreativeModeTab.WEAPONS_TAB)));
 	public static final RegistryObject<Item> CITRINE_PICKAXE = registerItem("citrine_pickaxe",
@@ -78,6 +93,19 @@ public final class ModItems {
 			() -> new AxeItem(ModTiers.CITRINE, 1, 1f, new Item.Properties().tab(ModCreativeModeTab.MOD_TOOLS_TAB)));
 	public static final RegistryObject<Item> CITRINE_HOE = registerItem("citrine_hoe",
 			() -> new HoeItem(ModTiers.CITRINE, 0, 0f, new Item.Properties().tab(ModCreativeModeTab.MOD_TOOLS_TAB)));
+	
+	public static final RegistryObject<Item> CITRINE_HELMET = registerItem("citrine_helmet",
+			() -> new ArmorItem(ModArmorMaterials.CITRINE, EquipmentSlot.HEAD,
+					new Item.Properties().tab(ModCreativeModeTab.ARMOR_TAB)));
+	public static final RegistryObject<Item> CITRINE_CHESTPLATE = registerItem("citrine_chestplate",
+			() -> new ArmorItem(ModArmorMaterials.CITRINE, EquipmentSlot.CHEST,
+					new Item.Properties().tab(ModCreativeModeTab.ARMOR_TAB)));
+	public static final RegistryObject<Item> CITRINE_LEGGINGS = registerItem("citrine_leggings",
+			() -> new ArmorItem(ModArmorMaterials.CITRINE, EquipmentSlot.LEGS,
+					new Item.Properties().tab(ModCreativeModeTab.ARMOR_TAB)));
+	public static final RegistryObject<Item> CITRINE_BOOTS = registerItem("citrine_boots",
+			() -> new ArmorItem(ModArmorMaterials.CITRINE, EquipmentSlot.FEET,
+					new Item.Properties().tab(ModCreativeModeTab.ARMOR_TAB)));
 
 	public static final RegistryObject<Item> RUBY_POISON_SWORD = registerItem("ruby_poison_sword",
 			() -> new SteelSwordItem(ModTiers.RUBY, 2, 3f, new Item.Properties().tab(ModCreativeModeTab.WEAPONS_TAB))
