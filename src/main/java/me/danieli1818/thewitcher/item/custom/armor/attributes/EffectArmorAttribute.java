@@ -16,9 +16,7 @@ public class EffectArmorAttribute implements ArmorAttribute {
 	@Override
 	public void onArmorWear(Player player, int numOfPieces) {
 		if (numOfPieces >= minNumOfPieces) {
-			System.out.println("Num Of Pieces: " + numOfPieces);
 			if (!player.hasEffect(effect.getEffect()) || player.getEffect(effect.getEffect()).getAmplifier() < effect.getAmplifier()) {
-				System.out.println("Gave effect: " + effect);
 				player.addEffect(new MobEffectInstance(effect));
 			}
 		}
