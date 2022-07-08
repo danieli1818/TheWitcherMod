@@ -2,6 +2,7 @@ package me.danieli1818.thewitcher;
 
 import me.danieli1818.thewitcher.block.ModBlocks;
 import me.danieli1818.thewitcher.item.ModItems;
+import me.danieli1818.thewitcher.painting.ModPaintings;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
@@ -23,6 +24,8 @@ public class TheWitcher {
 
 		ModItems.register(modEventBus);
 		ModBlocks.register(modEventBus);
+		
+		ModPaintings.register(modEventBus);
 
 		modEventBus.addListener(this::setup);
 		modEventBus.addListener(this::clientSetup);
