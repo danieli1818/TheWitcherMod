@@ -167,14 +167,14 @@ public class ModBlocks {
 					BlockBehaviour.Properties.copy(Blocks.DANDELION).noOcclusion()));
 	public static final RegistryObject<Block> POTTED_PINK_ROSE = registerBlockWithoutItem("potted_pink_rose",
 			() -> new FlowerPotBlock(null, ModBlocks.PINK_ROSE,
-					BlockBehaviour.Properties.copy(Blocks.DANDELION).noOcclusion()));
+					BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION).noOcclusion()));
 	public static final RegistryObject<Block> WHITE_ROSE = registerBlock("white_rose",
 			() -> new FlowerBlock(MobEffects.LEVITATION, 8,
 					BlockBehaviour.Properties.copy(Blocks.DANDELION).noOcclusion()),
 			ModCreativeModeTab.FLOWERS_TAB);
 	public static final RegistryObject<Block> POTTED_WHITE_ROSE = registerBlockWithoutItem("potted_white_rose",
 			() -> new FlowerPotBlock(null, ModBlocks.WHITE_ROSE,
-					BlockBehaviour.Properties.copy(Blocks.DANDELION).noOcclusion()));
+					BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION).noOcclusion()));
 
 	public static final RegistryObject<Block> SPEEDY_BLOCK = registerBlock("speedy_block",
 			() -> new SpeedyBlock(BlockBehaviour.Properties.of(Material.STONE).strength(4.0F, 5.0F)
