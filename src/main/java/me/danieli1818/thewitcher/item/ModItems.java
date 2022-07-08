@@ -5,9 +5,12 @@ import com.google.common.base.Supplier;
 import me.danieli1818.thewitcher.TheWitcher;
 import me.danieli1818.thewitcher.item.custom.DowsingRodItem;
 import me.danieli1818.thewitcher.item.custom.LanternItem;
+import me.danieli1818.thewitcher.item.custom.armor.ActiveArmorItem;
+import me.danieli1818.thewitcher.item.custom.armor.attributes.EffectArmorAttribute;
 import me.danieli1818.thewitcher.item.custom.fuel.CoalCokeItem;
 import me.danieli1818.thewitcher.item.custom.weapons.SteelSwordItem;
-import me.danieli1818.thewitcher.item.custom.weapons.attributes.EffectAttribute;
+import me.danieli1818.thewitcher.item.custom.weapons.attributes.EffectSwordAttribute;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorItem;
@@ -82,6 +85,47 @@ public final class ModItems {
 			() -> new ArmorItem(ModArmorMaterials.RUBY, EquipmentSlot.FEET,
 					new Item.Properties().tab(ModCreativeModeTab.ARMOR_TAB)));
 
+	public static final RegistryObject<Item> MAGICAL_RUBY_HELMET = registerItem("magical_ruby_helmet",
+			() -> new ActiveArmorItem(ModArmorMaterials.MAGICAL_RUBY, EquipmentSlot.HEAD,
+					new Item.Properties().tab(ModCreativeModeTab.ARMOR_TAB)).addAttribute(
+							new EffectArmorAttribute(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 1), 1))
+							.addAttribute(new EffectArmorAttribute(
+									new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 2), 2))
+							.addAttribute(new EffectArmorAttribute(
+									new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 3), 3))
+							.addAttribute(new EffectArmorAttribute(
+									new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 4), 4)));
+	public static final RegistryObject<Item> MAGICAL_RUBY_CHESTPLATE = registerItem("magical_ruby_chestplate",
+			() -> new ActiveArmorItem(ModArmorMaterials.MAGICAL_RUBY, EquipmentSlot.CHEST,
+					new Item.Properties().tab(ModCreativeModeTab.ARMOR_TAB)).addAttribute(
+							new EffectArmorAttribute(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 1), 1))
+							.addAttribute(new EffectArmorAttribute(
+									new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 2), 2))
+							.addAttribute(new EffectArmorAttribute(
+									new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 3), 3))
+							.addAttribute(new EffectArmorAttribute(
+									new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 4), 4)));
+	public static final RegistryObject<Item> MAGICAL_RUBY_LEGGINGS = registerItem("magical_ruby_leggings",
+			() -> new ActiveArmorItem(ModArmorMaterials.MAGICAL_RUBY, EquipmentSlot.LEGS,
+					new Item.Properties().tab(ModCreativeModeTab.ARMOR_TAB)).addAttribute(
+							new EffectArmorAttribute(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 1), 1))
+							.addAttribute(new EffectArmorAttribute(
+									new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 2), 2))
+							.addAttribute(new EffectArmorAttribute(
+									new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 3), 3))
+							.addAttribute(new EffectArmorAttribute(
+									new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 4), 4)));
+	public static final RegistryObject<Item> MAGICAL_RUBY_BOOTS = registerItem("magical_ruby_boots",
+			() -> new ActiveArmorItem(ModArmorMaterials.MAGICAL_RUBY, EquipmentSlot.FEET,
+					new Item.Properties().tab(ModCreativeModeTab.ARMOR_TAB)).addAttribute(
+							new EffectArmorAttribute(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 1), 1))
+							.addAttribute(new EffectArmorAttribute(
+									new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 2), 2))
+							.addAttribute(new EffectArmorAttribute(
+									new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 3), 3))
+							.addAttribute(new EffectArmorAttribute(
+									new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 4), 4)));
+
 	public static final RegistryObject<Item> CITRINE_SWORD = registerItem("citrine_sword",
 			() -> new SwordItem(ModTiers.CITRINE, 2, 3f, new Item.Properties().tab(ModCreativeModeTab.WEAPONS_TAB)));
 	public static final RegistryObject<Item> CITRINE_PICKAXE = registerItem("citrine_pickaxe",
@@ -93,7 +137,7 @@ public final class ModItems {
 			() -> new AxeItem(ModTiers.CITRINE, 1, 1f, new Item.Properties().tab(ModCreativeModeTab.MOD_TOOLS_TAB)));
 	public static final RegistryObject<Item> CITRINE_HOE = registerItem("citrine_hoe",
 			() -> new HoeItem(ModTiers.CITRINE, 0, 0f, new Item.Properties().tab(ModCreativeModeTab.MOD_TOOLS_TAB)));
-	
+
 	public static final RegistryObject<Item> CITRINE_HELMET = registerItem("citrine_helmet",
 			() -> new ArmorItem(ModArmorMaterials.CITRINE, EquipmentSlot.HEAD,
 					new Item.Properties().tab(ModCreativeModeTab.ARMOR_TAB)));
@@ -109,6 +153,6 @@ public final class ModItems {
 
 	public static final RegistryObject<Item> RUBY_POISON_SWORD = registerItem("ruby_poison_sword",
 			() -> new SteelSwordItem(ModTiers.RUBY, 2, 3f, new Item.Properties().tab(ModCreativeModeTab.WEAPONS_TAB))
-					.addSwordAttribute(new EffectAttribute(MobEffects.POISON, 0.5f, 1, 200)));
+					.addSwordAttribute(new EffectSwordAttribute(MobEffects.POISON, 0.5f, 1, 200)));
 
 }

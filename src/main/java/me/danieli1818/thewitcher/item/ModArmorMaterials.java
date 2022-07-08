@@ -12,6 +12,8 @@ import net.minecraft.world.item.crafting.Ingredient;
 public enum ModArmorMaterials implements ArmorMaterial {
 	RUBY("ruby", 30, new int[] { 2, 6, 8, 3 }, 28, SoundEvents.ARMOR_EQUIP_DIAMOND, 1.75F, 0.0F,
 			() -> Ingredient.of(ModItems.RUBY.get())),
+	MAGICAL_RUBY("magical_ruby", 30, new int[] { 2, 6, 8, 3 }, 30, SoundEvents.ARMOR_EQUIP_DIAMOND, 1.75F, 0.0F,
+			() -> Ingredient.of(ModItems.RUBY.get())),
 	CITRINE("citrine", 29, new int[] { 2, 6, 8, 2 }, 27, SoundEvents.ARMOR_EQUIP_GOLD, 1.5F, 0.0F,
 			() -> Ingredient.of(ModItems.CITRINE.get()));
 
