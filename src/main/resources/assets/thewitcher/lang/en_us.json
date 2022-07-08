@@ -53,9 +53,15 @@
 	
 	"block.thewitcher.ebony_door": "Ebony Door",
 	"block.thewitcher.ebony_trapdoor": "Ebony Trapdoor",
+	"block.thewitcher.pink_rose": "Pink Rose",
+	"block.thewitcher.white_rose": "White Rose",
 	
 	"itemGroup.minerals": "Minerals",
 	"itemGroup.examples": "Examples",
+	"itemGroup.mod_tools": "Tools",
+	"itemGroup.weapons": "Weapons",
+	"itemGroup.armor": "Armor",
+	"itemGroup.flowers": "Flowers",
 	
 	"item.thewitcher.dowsing_rod.no_valuables": "No valuables found!",
 	"tooltip.thewitcher.dowsing_rod.tooltip.shift": "Right click on a block to find valuables!",

@@ -3,6 +3,7 @@ package me.danieli1818.thewitcher.item;
 import com.google.common.base.Supplier;
 
 import me.danieli1818.thewitcher.TheWitcher;
+import me.danieli1818.thewitcher.block.ModBlocks;
 import me.danieli1818.thewitcher.item.custom.DowsingRodItem;
 import me.danieli1818.thewitcher.item.custom.LanternItem;
 import me.danieli1818.thewitcher.item.custom.armor.ActiveArmorItem;
@@ -15,11 +16,14 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.AxeItem;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -37,6 +41,11 @@ public final class ModItems {
 
 	public static RegistryObject<Item> registerItem(String name, Supplier<? extends Item> itemSupplier) {
 		return ITEMS.register(name, itemSupplier);
+	}
+
+	public static RegistryObject<Item> registerBlockItem(RegistryObject<? extends Block> block, CreativeModeTab tab) {
+		return ITEMS.register(block.getId().getPath(),
+				() -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
 	}
 
 	private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS,
@@ -154,5 +163,8 @@ public final class ModItems {
 	public static final RegistryObject<Item> RUBY_POISON_SWORD = registerItem("ruby_poison_sword",
 			() -> new SteelSwordItem(ModTiers.RUBY, 2, 3f, new Item.Properties().tab(ModCreativeModeTab.WEAPONS_TAB))
 					.addSwordAttribute(new EffectSwordAttribute(MobEffects.POISON, 0.5f, 1, 200)));
+
+	// Block Items
+	public static final RegistryObject<Item> PINK_ROSE = registerBlockItem(ModBlocks.PINK_ROSE, ModCreativeModeTab.FLOWERS_TAB);
 
 }

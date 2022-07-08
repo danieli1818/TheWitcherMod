@@ -8,13 +8,17 @@ import me.danieli1818.thewitcher.TheWitcher;
 import me.danieli1818.thewitcher.block.custom.SpeedyBlock;
 import me.danieli1818.thewitcher.item.ModCreativeModeTab;
 import me.danieli1818.thewitcher.item.ModItems;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.FenceBlock;
 import net.minecraft.world.level.block.FenceGateBlock;
+import net.minecraft.world.level.block.FlowerBlock;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraft.world.level.block.PressurePlateBlock;
 import net.minecraft.world.level.block.PressurePlateBlock.Sensitivity;
 import net.minecraft.world.level.block.SlabBlock;
@@ -44,6 +48,11 @@ public class ModBlocks {
 
 	public static void register(IEventBus eventBus) {
 		BLOCKS.register(eventBus);
+	}
+	
+	private static RegistryObject<Block> registerBlockWithoutItem(String name,
+			Supplier<? extends Block> blockSupplier) {
+		return BLOCKS.register(name, blockSupplier);
 	}
 
 	private static RegistryObject<Block> registerBlock(String name, Supplier<? extends Block> blockSupplier,
@@ -93,9 +102,9 @@ public class ModBlocks {
 			() -> new FenceBlock(BlockBehaviour.Properties.of(Material.METAL).strength(4.25F, 5.0F)
 					.requiresCorrectToolForDrops().sound(SoundType.METAL)),
 			ModCreativeModeTab.MINERALS_TAB);
-	public static final RegistryObject<Block> RUBY_FENCE_GATE = registerBlock("ruby_fence_gate",
-			() -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.METAL).strength(4.25F, 5.0F)
-					.requiresCorrectToolForDrops().sound(SoundType.METAL)),
+	public static final RegistryObject<Block> RUBY_FENCE_GATE = registerBlock(
+			"ruby_fence_gate", () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.METAL)
+					.strength(4.25F, 5.0F).requiresCorrectToolForDrops().sound(SoundType.METAL)),
 			ModCreativeModeTab.MINERALS_TAB);
 	public static final RegistryObject<Block> RUBY_WALL = registerBlock("ruby_wall",
 			() -> new WallBlock(BlockBehaviour.Properties.of(Material.METAL).strength(4.25F, 5.0F)
@@ -106,8 +115,8 @@ public class ModBlocks {
 					.requiresCorrectToolForDrops().sound(SoundType.METAL).noCollission()),
 			ModCreativeModeTab.MINERALS_TAB);
 	public static final RegistryObject<Block> RUBY_PRESSURE_PLATE = registerBlock("ruby_pressure_plate",
-			() -> new PressurePlateBlock(Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.METAL).strength(4.25F, 5.0F)
-					.requiresCorrectToolForDrops().sound(SoundType.METAL)),
+			() -> new PressurePlateBlock(Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.METAL)
+					.strength(4.25F, 5.0F).requiresCorrectToolForDrops().sound(SoundType.METAL)),
 			ModCreativeModeTab.MINERALS_TAB);
 
 	public static final RegistryObject<Block> CITRINE_BLOCK = registerBlock("citrine_block",
@@ -126,9 +135,9 @@ public class ModBlocks {
 			() -> new FenceBlock(BlockBehaviour.Properties.of(Material.METAL).strength(4.25F, 5.0F)
 					.requiresCorrectToolForDrops().sound(SoundType.METAL)),
 			ModCreativeModeTab.MINERALS_TAB);
-	public static final RegistryObject<Block> CITRINE_FENCE_GATE = registerBlock("citrine_fence_gate",
-			() -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.METAL).strength(4.25F, 5.0F)
-					.requiresCorrectToolForDrops().sound(SoundType.METAL)),
+	public static final RegistryObject<Block> CITRINE_FENCE_GATE = registerBlock(
+			"citrine_fence_gate", () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.METAL)
+					.strength(4.25F, 5.0F).requiresCorrectToolForDrops().sound(SoundType.METAL)),
 			ModCreativeModeTab.MINERALS_TAB);
 	public static final RegistryObject<Block> CITRINE_WALL = registerBlock("citrine_wall",
 			() -> new WallBlock(BlockBehaviour.Properties.of(Material.METAL).strength(4.25F, 5.0F)
@@ -139,10 +148,10 @@ public class ModBlocks {
 					.requiresCorrectToolForDrops().sound(SoundType.METAL).noCollission()),
 			ModCreativeModeTab.MINERALS_TAB);
 	public static final RegistryObject<Block> CITRINE_PRESSURE_PLATE = registerBlock("citrine_pressure_plate",
-			() -> new PressurePlateBlock(Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.METAL).strength(4.25F, 5.0F)
-					.requiresCorrectToolForDrops().sound(SoundType.METAL)),
+			() -> new PressurePlateBlock(Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.METAL)
+					.strength(4.25F, 5.0F).requiresCorrectToolForDrops().sound(SoundType.METAL)),
 			ModCreativeModeTab.MINERALS_TAB);
-	
+
 	public static final RegistryObject<Block> EBONY_DOOR = registerBlock("ebony_door",
 			() -> new DoorBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(4.25F, 5.0F)
 					.requiresCorrectToolForDrops().sound(SoundType.STONE).noOcclusion()),
@@ -151,6 +160,21 @@ public class ModBlocks {
 			() -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(4.25F, 5.0F)
 					.requiresCorrectToolForDrops().sound(SoundType.STONE).noOcclusion()),
 			ModCreativeModeTab.MINERALS_TAB);
+
+	// Item is registered in ModItems since it's used as a creative mode tab icon
+	public static final RegistryObject<Block> PINK_ROSE = registerBlockWithoutItem("pink_rose",
+			() -> new FlowerBlock(MobEffects.LEVITATION, 8,
+					BlockBehaviour.Properties.copy(Blocks.DANDELION).noOcclusion()));
+	public static final RegistryObject<Block> POTTED_PINK_ROSE = registerBlockWithoutItem("potted_pink_rose",
+			() -> new FlowerPotBlock(null, ModBlocks.PINK_ROSE,
+					BlockBehaviour.Properties.copy(Blocks.DANDELION).noOcclusion()));
+	public static final RegistryObject<Block> WHITE_ROSE = registerBlock("white_rose",
+			() -> new FlowerBlock(MobEffects.LEVITATION, 8,
+					BlockBehaviour.Properties.copy(Blocks.DANDELION).noOcclusion()),
+			ModCreativeModeTab.FLOWERS_TAB);
+	public static final RegistryObject<Block> POTTED_WHITE_ROSE = registerBlockWithoutItem("potted_white_rose",
+			() -> new FlowerPotBlock(null, ModBlocks.WHITE_ROSE,
+					BlockBehaviour.Properties.copy(Blocks.DANDELION).noOcclusion()));
 
 	public static final RegistryObject<Block> SPEEDY_BLOCK = registerBlock("speedy_block",
 			() -> new SpeedyBlock(BlockBehaviour.Properties.of(Material.STONE).strength(4.0F, 5.0F)

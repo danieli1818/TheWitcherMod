@@ -45,4 +45,12 @@ public class ModCreativeModeTab {
 		}
 	};
 	
+	public static final CreativeModeTab FLOWERS_TAB = new CreativeModeTab("flowers") {
+		
+		@Override
+		public ItemStack makeIcon() {
+			return new ItemStack(ModItems.PINK_ROSE.get());
+		}
+	};
+	
 }

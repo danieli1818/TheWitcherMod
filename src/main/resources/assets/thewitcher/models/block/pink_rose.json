@@ -1,0 +1,6 @@
+{
+	"parent": "block/cross",
+	"textures": {
+		"cross": "thewitcher:block/pink_rose"
+	}
+}
