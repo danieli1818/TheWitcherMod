@@ -19,6 +19,7 @@ import net.minecraft.world.level.block.FenceBlock;
 import net.minecraft.world.level.block.FenceGateBlock;
 import net.minecraft.world.level.block.FlowerBlock;
 import net.minecraft.world.level.block.FlowerPotBlock;
+import net.minecraft.world.level.block.GlassBlock;
 import net.minecraft.world.level.block.PressurePlateBlock;
 import net.minecraft.world.level.block.PressurePlateBlock.Sensitivity;
 import net.minecraft.world.level.block.SlabBlock;
@@ -49,7 +50,7 @@ public class ModBlocks {
 	public static void register(IEventBus eventBus) {
 		BLOCKS.register(eventBus);
 	}
-	
+
 	private static RegistryObject<Block> registerBlockWithoutItem(String name,
 			Supplier<? extends Block> blockSupplier) {
 		return BLOCKS.register(name, blockSupplier);
@@ -175,6 +176,11 @@ public class ModBlocks {
 	public static final RegistryObject<Block> POTTED_WHITE_ROSE = registerBlockWithoutItem("potted_white_rose",
 			() -> new FlowerPotBlock(null, ModBlocks.WHITE_ROSE,
 					BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION).noOcclusion()));
+
+	// Item is registered in ModItems since it's used as a creative mode tab icon
+	public static final RegistryObject<Block> THE_WHITE_WOLF_AND_THE_SWALLOW_WINDOW = registerBlockWithoutItem(
+			"the_white_wolf_and_the_swallow_window",
+			() -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion()));
 
 	public static final RegistryObject<Block> SPEEDY_BLOCK = registerBlock("speedy_block",
 			() -> new SpeedyBlock(BlockBehaviour.Properties.of(Material.STONE).strength(4.0F, 5.0F)

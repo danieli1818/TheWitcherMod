@@ -1,31 +1,52 @@
 {
 	"item.thewitcher.ruby": "Ruby",
+	
 	"item.thewitcher.ruby_sword": "Ruby Sword",
 	"item.thewitcher.ruby_poison_sword": "Ruby Poison Sword",
+	
 	"item.thewitcher.ruby_pickaxe": "Ruby Pickaxe",
 	"item.thewitcher.ruby_shovel": "Ruby Shovel",
 	"item.thewitcher.ruby_axe": "Ruby Axe",
 	"item.thewitcher.ruby_hoe": "Ruby Hoe",
+	
 	"item.thewitcher.ruby_helmet": "Ruby Helmet",
 	"item.thewitcher.ruby_chestplate": "Ruby Chestplate",
 	"item.thewitcher.ruby_leggings": "Ruby Leggings",
 	"item.thewitcher.ruby_boots": "Ruby Boots",
+	
 	"item.thewitcher.magical_ruby_helmet": "Magical Ruby Helmet",
 	"item.thewitcher.magical_ruby_chestplate": "Magical Ruby Chestplate",
 	"item.thewitcher.magical_ruby_leggings": "Magical Ruby Leggings",
 	"item.thewitcher.magical_ruby_boots": "Magical Ruby Boots",
+	
 	"item.thewitcher.raw_ruby": "Raw Ruby",
+	
 	"item.thewitcher.citrine": "Citrine",
+	
 	"item.thewitcher.citrine_sword": "Citrine Sword",
+	
 	"item.thewitcher.citrine_pickaxe": "Citrine Pickaxe",
 	"item.thewitcher.citrine_shovel": "Citrine Shovel",
 	"item.thewitcher.citrine_axe": "Citrine Axe",
 	"item.thewitcher.citrine_hoe": "Citrine Hoe",
+	
 	"item.thewitcher.citrine_helmet": "Citrine Helmet",
 	"item.thewitcher.citrine_chestplate": "Citrine Chestplate",
 	"item.thewitcher.citrine_leggings": "Citrine Leggings",
 	"item.thewitcher.citrine_boots": "Citrine Boots",
+	
 	"item.thewitcher.raw_citrine": "Raw Citrine",
+	
+	"item.thewitcher.raw_meteorite": "Raw Meteorite",
+	"item.thewitcher.raw_red_meteorite": "Raw Red Meteorite",
+	"item.thewitcher.raw_blue_meteorite": "Raw Blue Meteorite",
+	"item.thewitcher.raw_yellow_meteorite": "Raw Yellow Meteorite",
+	
+	"item.thewitcher.meteorite_ingot": "Meteorite Ingot",
+	"item.thewitcher.red_meteorite_ingot": "Red Meteorite Ingot",
+	"item.thewitcher.blue_meteorite_ingot": "Blue Meteorite Ingot",
+	"item.thewitcher.yellow_meteorite_ingot": "Yellow Meteorite Ingot",
+	
 	"item.thewitcher.lantern": "Lantern",
 	"item.thewitcher.dowsing_rod": "Dowsing Rod",
 	"item.thewitcher.cucumber": "Cucumber",
@@ -56,12 +77,15 @@
 	"block.thewitcher.pink_rose": "Pink Rose",
 	"block.thewitcher.white_rose": "White Rose",
 	
+	"block.thewitcher.the_white_wolf_and_the_swallow_window": "The White Wolf And The Swallow Window",
+	
 	"itemGroup.minerals": "Minerals",
 	"itemGroup.examples": "Examples",
 	"itemGroup.mod_tools": "Tools",
 	"itemGroup.weapons": "Weapons",
 	"itemGroup.armor": "Armor",
 	"itemGroup.flowers": "Flowers",
+	"itemGroup.decoration_blocks": "Decoration Blocks",
 	
 	"item.thewitcher.dowsing_rod.no_valuables": "No valuables found!",
 	"tooltip.thewitcher.dowsing_rod.tooltip.shift": "Right click on a block to find valuables!",

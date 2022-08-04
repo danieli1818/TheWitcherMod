@@ -45,10 +45,13 @@ public class TheWitcher {
 	private void clientSetup(final FMLClientSetupEvent event) {
 		ItemBlockRenderTypes.setRenderLayer(ModBlocks.EBONY_DOOR.get(), RenderType.translucent());
 		ItemBlockRenderTypes.setRenderLayer(ModBlocks.EBONY_TRAPDOOR.get(), RenderType.translucent());
+		
 		ItemBlockRenderTypes.setRenderLayer(ModBlocks.PINK_ROSE.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(ModBlocks.POTTED_PINK_ROSE.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(ModBlocks.WHITE_ROSE.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(ModBlocks.POTTED_WHITE_ROSE.get(), RenderType.cutout());
+		
+		ItemBlockRenderTypes.setRenderLayer(ModBlocks.THE_WHITE_WOLF_AND_THE_SWALLOW_WINDOW.get(), RenderType.translucent());
 	}
 
 }

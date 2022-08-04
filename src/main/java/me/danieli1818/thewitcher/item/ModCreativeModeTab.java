@@ -53,4 +53,12 @@ public class ModCreativeModeTab {
 		}
 	};
 	
+	public static final CreativeModeTab DECORATION_BLOCKS_TAB = new CreativeModeTab("decoration_blocks") {
+		
+		@Override
+		public ItemStack makeIcon() {
+			return new ItemStack(ModItems.THE_WHITE_WOLF_AND_THE_SWALLOW_WINDOW.get());
+		}
+	};
+	
 }

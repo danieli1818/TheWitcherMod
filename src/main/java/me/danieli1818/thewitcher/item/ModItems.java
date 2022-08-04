@@ -58,6 +58,22 @@ public final class ModItems {
 	public static final RegistryObject<Item> CITRINE = registerItem("citrine", PreciousStone::new);
 
 	public static final RegistryObject<Item> RAW_CITRINE = registerItem("raw_citrine", PreciousStone::new);
+	
+	public static final RegistryObject<Item> RAW_METEORITE = registerItem("raw_meteorite", PreciousStone::new);
+	
+	public static final RegistryObject<Item> RED_RAW_METEORITE = registerItem("raw_red_meteorite", PreciousStone::new);
+	
+	public static final RegistryObject<Item> BLUE_RAW_METEORITE = registerItem("raw_blue_meteorite", PreciousStone::new);
+	
+	public static final RegistryObject<Item> YELLOW_RAW_METEORITE = registerItem("raw_yellow_meteorite", PreciousStone::new);
+	
+	public static final RegistryObject<Item> RAW_METEORITE_INGOT = registerItem("meteorite_ingot", PreciousStone::new);
+	
+	public static final RegistryObject<Item> RAW_RED_METEORITE_INGOT = registerItem("red_meteorite_ingot", PreciousStone::new);
+	
+	public static final RegistryObject<Item> RAW_BLUE_METEORITE_INGOT = registerItem("blue_meteorite_ingot", PreciousStone::new);
+	
+	public static final RegistryObject<Item> RAW_YELLOW_METEORITE_INGOT = registerItem("yellow_meteorite_ingot", PreciousStone::new);
 
 	public static final RegistryObject<Item> LANTERN = registerItem("lantern", LanternItem::new);
 
@@ -166,5 +182,7 @@ public final class ModItems {
 
 	// Block Items
 	public static final RegistryObject<Item> PINK_ROSE = registerBlockItem(ModBlocks.PINK_ROSE, ModCreativeModeTab.FLOWERS_TAB);
+	
+	public static final RegistryObject<Item> THE_WHITE_WOLF_AND_THE_SWALLOW_WINDOW = registerBlockItem(ModBlocks.THE_WHITE_WOLF_AND_THE_SWALLOW_WINDOW, ModCreativeModeTab.DECORATION_BLOCKS_TAB);
 
 }

@@ -1,0 +1,117 @@
+
+Furnitures:
+	- Stool
+	- Curtains
+	- Bed Canopy
+
+Mobs:
+	https://witcher.fandom.com/wiki/The_Witcher_3_bestiary
+	- Drowner
+	- Drowned Dead
+	- Bruxa
+	- Higher Vampire
+	- Griffin
+	- Harpy
+		- Normal Type
+		- Celaeno harpy which steals dreams and binds them in crystals in the mountains
+	- Erynia
+	- Kikimore
+		- Worker
+		- Warrior
+		- Queen
+	- Foglet
+	- Leshen
+
+Environment and biomes:
+	- Fog where Foglets spawn
+	
+Materials:
+	- Ruby
+	- Citrine
+	- Amethyst
+	- Amethyst dust
+	- Diamond
+	- Diamond dust
+	- Raw meteorite
+		- Red
+		- Blue
+		- Yellow
+	- Meteorite ingot
+		- Red
+		- Blue
+		- Yellow
+
+Weapons:	
+	Swords:
+		Steel:
+			- Steel Witcher sword
+		Silver:
+			- Silver Witcher sword
+			- Zireael Ciri's sword
+	Lances
+	Halberds
+	
+
+Armor:
+	Special:
+		- Duny's Hedgehog armor from Cintra
+	Guilds:
+		- Coat of arms of each guild and kingdom
+
+Races:
+	- Elves
+	- Dwarves
+	- Gnomes
+	- Humans
+
+Categories of abilities:
+	- Normal
+	- Witcher
+	- Mage/Enchantress
+
+Plants:
+	https://witcher.fandom.com/wiki/Plants_in_the_novels
+	More types in The Witcher: The Last Wish Book
+	- Absenta/Artemisia Absinthium/Wormwood
+	- Aspen
+	- Belladonna
+	- Celandine
+	- Hawthorn
+	- Mandrake
+	- Raven's Eye
+
+Trees:
+	More types in The Witcher: The Last Wish Book and other books in the serie
+	- Palm
+
+Crops:
+	More types in The Witcher: The Last Wish Book with the Sylvan called Torque
+	- Corn
+
+Places/Structures:
+	- Temples:
+		- The temple of Melitele (Nenneke)
+		- The temple of the lionheaded spider
+	- Villages:
+		- Improve total look
+		- Add Inns with a notice board outside
+		- Add alderman's house
+		- Add marketplace
+		Port villages:
+			- Add docks
+	- Towns:
+		- Bigger than villages
+		- Add sewers
+		- Palaces in some of them
+		Port villages:
+			- Add docks
+	- Special:
+		- Temeria's striga palace
+		- Gramp's cannibal lonely hut in the forest
+		- Nimue's tower
+
+Windows:
+	- Decorated multi-coloured windows
+
+
+	
