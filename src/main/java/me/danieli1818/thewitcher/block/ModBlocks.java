@@ -5,6 +5,7 @@ import java.util.List;
 import com.google.common.base.Supplier;
 
 import me.danieli1818.thewitcher.TheWitcher;
+import me.danieli1818.thewitcher.block.custom.CitrineLampBlock;
 import me.danieli1818.thewitcher.block.custom.SpeedyBlock;
 import me.danieli1818.thewitcher.item.ModCreativeModeTab;
 import me.danieli1818.thewitcher.item.ModItems;
@@ -92,7 +93,7 @@ public class ModBlocks {
 					.requiresCorrectToolForDrops().sound(SoundType.STONE)),
 			ModCreativeModeTab.MINERALS_TAB);
 	public static final RegistryObject<Block> RUBY_STAIRS = registerBlock("ruby_stairs",
-			() -> new StairBlock(() -> ModBlocks.CITRINE_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties
+			() -> new StairBlock(() -> ModBlocks.RUBY_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties
 					.of(Material.METAL).strength(4.25F, 5.0F).requiresCorrectToolForDrops().sound(SoundType.METAL)),
 			ModCreativeModeTab.MINERALS_TAB);
 	public static final RegistryObject<Block> RUBY_SLAB = registerBlock("ruby_slab",
@@ -152,6 +153,9 @@ public class ModBlocks {
 			() -> new PressurePlateBlock(Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.METAL)
 					.strength(4.25F, 5.0F).requiresCorrectToolForDrops().sound(SoundType.METAL)),
 			ModCreativeModeTab.MINERALS_TAB);
+	public static final RegistryObject<Block> CITRINE_LAMP = registerBlock("citrine_lamp",
+			() -> new CitrineLampBlock(),
+			ModCreativeModeTab.EXAMPLES_TAB);
 
 	public static final RegistryObject<Block> EBONY_DOOR = registerBlock("ebony_door",
 			() -> new DoorBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(4.25F, 5.0F)

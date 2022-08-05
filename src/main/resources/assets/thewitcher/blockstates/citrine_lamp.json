@@ -1,0 +1,6 @@
+{
+	"variants": {
+		"lit=false": { "model": "thewitcher:block/citrine_lamp"},
+		"lit=true": { "model": "thewitcher:block/citrine_lamp_on"}
+	}
+}
