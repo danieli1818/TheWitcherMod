@@ -4,10 +4,11 @@ import com.google.common.base.Supplier;
 
 import me.danieli1818.thewitcher.TheWitcher;
 import me.danieli1818.thewitcher.block.ModBlocks;
-import me.danieli1818.thewitcher.item.custom.DowsingRodItem;
 import me.danieli1818.thewitcher.item.custom.LanternItem;
 import me.danieli1818.thewitcher.item.custom.armor.ActiveArmorItem;
 import me.danieli1818.thewitcher.item.custom.armor.attributes.EffectArmorAttribute;
+import me.danieli1818.thewitcher.item.custom.example.DataTabletItem;
+import me.danieli1818.thewitcher.item.custom.example.DowsingRodItem;
 import me.danieli1818.thewitcher.item.custom.fuel.CoalCokeItem;
 import me.danieli1818.thewitcher.item.custom.weapons.SteelSwordItem;
 import me.danieli1818.thewitcher.item.custom.weapons.attributes.EffectSwordAttribute;
@@ -58,22 +59,27 @@ public final class ModItems {
 	public static final RegistryObject<Item> CITRINE = registerItem("citrine", PreciousStone::new);
 
 	public static final RegistryObject<Item> RAW_CITRINE = registerItem("raw_citrine", PreciousStone::new);
-	
+
 	public static final RegistryObject<Item> RAW_METEORITE = registerItem("raw_meteorite", PreciousStone::new);
-	
+
 	public static final RegistryObject<Item> RED_RAW_METEORITE = registerItem("raw_red_meteorite", PreciousStone::new);
-	
-	public static final RegistryObject<Item> BLUE_RAW_METEORITE = registerItem("raw_blue_meteorite", PreciousStone::new);
-	
-	public static final RegistryObject<Item> YELLOW_RAW_METEORITE = registerItem("raw_yellow_meteorite", PreciousStone::new);
-	
+
+	public static final RegistryObject<Item> BLUE_RAW_METEORITE = registerItem("raw_blue_meteorite",
+			PreciousStone::new);
+
+	public static final RegistryObject<Item> YELLOW_RAW_METEORITE = registerItem("raw_yellow_meteorite",
+			PreciousStone::new);
+
 	public static final RegistryObject<Item> RAW_METEORITE_INGOT = registerItem("meteorite_ingot", PreciousStone::new);
-	
-	public static final RegistryObject<Item> RAW_RED_METEORITE_INGOT = registerItem("red_meteorite_ingot", PreciousStone::new);
-	
-	public static final RegistryObject<Item> RAW_BLUE_METEORITE_INGOT = registerItem("blue_meteorite_ingot", PreciousStone::new);
-	
-	public static final RegistryObject<Item> RAW_YELLOW_METEORITE_INGOT = registerItem("yellow_meteorite_ingot", PreciousStone::new);
+
+	public static final RegistryObject<Item> RAW_RED_METEORITE_INGOT = registerItem("red_meteorite_ingot",
+			PreciousStone::new);
+
+	public static final RegistryObject<Item> RAW_BLUE_METEORITE_INGOT = registerItem("blue_meteorite_ingot",
+			PreciousStone::new);
+
+	public static final RegistryObject<Item> RAW_YELLOW_METEORITE_INGOT = registerItem("yellow_meteorite_ingot",
+			PreciousStone::new);
 
 	public static final RegistryObject<Item> LANTERN = registerItem("lantern", LanternItem::new);
 
@@ -180,9 +186,14 @@ public final class ModItems {
 			() -> new SteelSwordItem(ModTiers.RUBY, 2, 3f, new Item.Properties().tab(ModCreativeModeTab.WEAPONS_TAB))
 					.addSwordAttribute(new EffectSwordAttribute(MobEffects.POISON, 0.5f, 1, 200)));
 
+	public static final RegistryObject<Item> DATA_TABLET = registerItem("data_tablet",
+			() -> new DataTabletItem(new Item.Properties().tab(ModCreativeModeTab.EXAMPLES_TAB).stacksTo(1)));
+
 	// Block Items
-	public static final RegistryObject<Item> PINK_ROSE = registerBlockItem(ModBlocks.PINK_ROSE, ModCreativeModeTab.FLOWERS_TAB);
-	
-	public static final RegistryObject<Item> THE_WHITE_WOLF_AND_THE_SWALLOW_WINDOW = registerBlockItem(ModBlocks.THE_WHITE_WOLF_AND_THE_SWALLOW_WINDOW, ModCreativeModeTab.DECORATION_BLOCKS_TAB);
+	public static final RegistryObject<Item> PINK_ROSE = registerBlockItem(ModBlocks.PINK_ROSE,
+			ModCreativeModeTab.FLOWERS_TAB);
+
+	public static final RegistryObject<Item> THE_WHITE_WOLF_AND_THE_SWALLOW_WINDOW = registerBlockItem(
+			ModBlocks.THE_WHITE_WOLF_AND_THE_SWALLOW_WINDOW, ModCreativeModeTab.DECORATION_BLOCKS_TAB);
 
 }
