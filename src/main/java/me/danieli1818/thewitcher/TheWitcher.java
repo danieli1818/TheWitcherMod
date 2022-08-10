@@ -3,6 +3,7 @@ package me.danieli1818.thewitcher;
 import me.danieli1818.thewitcher.block.ModBlocks;
 import me.danieli1818.thewitcher.item.ModItems;
 import me.danieli1818.thewitcher.painting.ModPaintings;
+import me.danieli1818.thewitcher.util.ModItemProperties;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
@@ -52,6 +53,8 @@ public class TheWitcher {
 		ItemBlockRenderTypes.setRenderLayer(ModBlocks.POTTED_WHITE_ROSE.get(), RenderType.cutout());
 		
 		ItemBlockRenderTypes.setRenderLayer(ModBlocks.THE_WHITE_WOLF_AND_THE_SWALLOW_WINDOW.get(), RenderType.translucent());
+		
+		ModItemProperties.addCustomItemProperties();
 	}
 
 }

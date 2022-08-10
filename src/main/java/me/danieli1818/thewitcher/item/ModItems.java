@@ -18,6 +18,7 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
@@ -188,6 +189,9 @@ public final class ModItems {
 
 	public static final RegistryObject<Item> DATA_TABLET = registerItem("data_tablet",
 			() -> new DataTabletItem(new Item.Properties().tab(ModCreativeModeTab.EXAMPLES_TAB).stacksTo(1)));
+
+	public static final RegistryObject<Item> ZEFHAR_BOW = registerItem("zefhar_bow",
+			() -> new BowItem(new Item.Properties().tab(ModCreativeModeTab.WEAPONS_TAB).durability(500)));
 
 	// Block Items
 	public static final RegistryObject<Item> PINK_ROSE = registerBlockItem(ModBlocks.PINK_ROSE,

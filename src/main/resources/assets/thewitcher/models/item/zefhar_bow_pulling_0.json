@@ -1,0 +1,6 @@
+{
+	"parent": "thewitcher:item/zefhar_bow",
+	"textures": {
+		"layer0": "thewitcher:item/zefhar_bow_pulling_0"
+	}
+}

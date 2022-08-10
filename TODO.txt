@@ -21,9 +21,12 @@ Mobs:
 		- Queen
 	- Foglet
 	- Leshen
+	- Aguara
 
 Environment and biomes:
 	- Fog where Foglets spawn
+	- Illusions:
+		- Illusion blocks maybe
 	
 Materials:
 	- Ruby
@@ -63,6 +66,8 @@ Races:
 	- Dwarves
 	- Gnomes
 	- Humans
+	- Dopplers
+	- Halflings
 
 Categories of abilities:
 	- Normal
@@ -92,6 +97,7 @@ Places/Structures:
 	- Temples:
 		- The temple of Melitele (Nenneke)
 		- The temple of the lionheaded spider
+		- The eternal fire temple in Novigrad
 	- Villages:
 		- Improve total look
 		- Add Inns with a notice board outside
@@ -103,6 +109,7 @@ Places/Structures:
 		- Bigger than villages
 		- Add sewers
 		- Palaces in some of them
+		- Add banks
 		Port villages:
 			- Add docks
 	- Special:
@@ -113,5 +120,7 @@ Places/Structures:
 Windows:
 	- Decorated multi-coloured windows
 
+Lights:
+	- Add coloured lights
 
 	
