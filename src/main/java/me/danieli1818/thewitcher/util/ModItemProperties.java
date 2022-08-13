@@ -1,6 +1,7 @@
 package me.danieli1818.thewitcher.util;
 
 import me.danieli1818.thewitcher.item.ModItems;
+import me.danieli1818.thewitcher.item.custom.weapons.bows.ModBowItem;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -12,7 +13,11 @@ public class ModItemProperties {
 	}
 	
 	public static void registerBow(Item item) {
-		registerBow(item, 20);
+		if (item instanceof ModBowItem) {
+			registerBow(item, ((ModBowItem)item).getMaxDrawDuration());
+		} else {
+			registerBow(item, 20);
+		}
 	}
 	
 	public static void registerBow(Item item, int fullPulledTicks) {

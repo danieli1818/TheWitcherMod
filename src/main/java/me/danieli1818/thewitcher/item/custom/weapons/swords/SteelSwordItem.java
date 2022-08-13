@@ -1,9 +1,9 @@
-package me.danieli1818.thewitcher.item.custom.weapons;
+package me.danieli1818.thewitcher.item.custom.weapons.swords;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import me.danieli1818.thewitcher.item.custom.weapons.attributes.SwordAttribute;
+import me.danieli1818.thewitcher.item.custom.weapons.swords.attributes.SwordAttribute;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;

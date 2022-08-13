@@ -10,8 +10,9 @@ import me.danieli1818.thewitcher.item.custom.armor.attributes.EffectArmorAttribu
 import me.danieli1818.thewitcher.item.custom.example.DataTabletItem;
 import me.danieli1818.thewitcher.item.custom.example.DowsingRodItem;
 import me.danieli1818.thewitcher.item.custom.fuel.CoalCokeItem;
-import me.danieli1818.thewitcher.item.custom.weapons.SteelSwordItem;
-import me.danieli1818.thewitcher.item.custom.weapons.attributes.EffectSwordAttribute;
+import me.danieli1818.thewitcher.item.custom.weapons.bows.CustomModBowItem;
+import me.danieli1818.thewitcher.item.custom.weapons.swords.SteelSwordItem;
+import me.danieli1818.thewitcher.item.custom.weapons.swords.attributes.EffectSwordAttribute;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -190,8 +191,11 @@ public final class ModItems {
 	public static final RegistryObject<Item> DATA_TABLET = registerItem("data_tablet",
 			() -> new DataTabletItem(new Item.Properties().tab(ModCreativeModeTab.EXAMPLES_TAB).stacksTo(1)));
 
+//	public static final RegistryObject<Item> ZEFHAR_BOW = registerItem("zefhar_bow",
+//			() -> new BowItem(new Item.Properties().tab(ModCreativeModeTab.WEAPONS_TAB).durability(500)));
+	
 	public static final RegistryObject<Item> ZEFHAR_BOW = registerItem("zefhar_bow",
-			() -> new BowItem(new Item.Properties().tab(ModCreativeModeTab.WEAPONS_TAB).durability(500)));
+			() -> new CustomModBowItem(40, 0.0F, 0.2F, new Item.Properties().tab(ModCreativeModeTab.WEAPONS_TAB).durability(500)));
 
 	// Block Items
 	public static final RegistryObject<Item> PINK_ROSE = registerBlockItem(ModBlocks.PINK_ROSE,

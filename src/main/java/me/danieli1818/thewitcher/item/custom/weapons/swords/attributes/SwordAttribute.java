@@ -1,4 +1,4 @@
-package me.danieli1818.thewitcher.item.custom.weapons.attributes;
+package me.danieli1818.thewitcher.item.custom.weapons.swords.attributes;
 
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
