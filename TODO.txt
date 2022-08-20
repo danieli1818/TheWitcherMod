@@ -4,6 +4,23 @@ Furnitures:
 	- Curtains
 	- Bed Canopy
 
+Animals:
+	- Oxen
+	- Onagers - The Witcher Sword of Destiny page 189
+	- Insects - The Witcher Sword of Destiny page 248 in Brokilon forest
+	- Lizards - The Witcher Sword of Destiny page 248 in Brokilon forest
+	- Beetles - The Witcher Sword of Destiny page 248 in Brokilon forest
+	- Spiders - The Witcher Sword of Destiny page 248 in Brokilon forest
+	- Woodpeckers - The Witcher Sword of Destiny page 248 in Brokilon forest
+	- Seagulls - The Witcher Sword of Destiny page 242 in Bremervoord port/harbour
+	- Frogs - The Witcher Sword of Destiny page 77, when Yennefer turns the Barefield soldiers into them
+	- Horses - The Witcher Sword of Destiny page 77, leading wagons
+	- Turtles - The Witcher Sword of Destiny page 77, when Yennefer turns the Barefield soldiers into them
+	- Geese - The Witcher Sword of Destiny page 77, when Yennefer turns the Barefield soldiers into them
+	- Woodlice - The Witcher Sword of Destiny page 77, when Yennefer turns the Barefield soldiers into them
+	- Flamingos - The Witcher Sword of Destiny page 77, when Yennefer turns the Barefield soldiers into them
+	- Stripy Piglets - The Witcher Sword of Destiny page 77, when Yennefer turns the Barefield soldiers into them
+
 Mobs:
 	https://witcher.fandom.com/wiki/The_Witcher_3_bestiary
 	- Drowner
@@ -22,11 +39,18 @@ Mobs:
 	- Foglet
 	- Leshen
 	- Aguara
+	Sea/Ocean monsters:
+		- Kraken - The Witcher Sword of Destiny page 210, ideas for monsters in the sea/ocean next to Bremervoord port/harbour
+		- Giant Squid - The Witcher Sword of Destiny page 210, ideas for monsters in the sea/ocean next to Bremervoord port/harbour
 
 Environment and biomes:
 	- Fog where Foglets spawn
 	- Illusions:
 		- Illusion blocks maybe
+	- Pebbly Beach - The Witcher Sword of Destiny page 209, in Bremervoord port/harbour
+
+River names:
+	Adalatte - The Witcher Sword of Destiny page 242, with a ferryman with a ferry to cross it.
 	
 Materials:
 	- Ruby
@@ -44,6 +68,10 @@ Materials:
 		- Blue
 		- Yellow
 
+Items:
+	- Horse collar
+	- Horseshoes
+
 Weapons:	
 	Swords:
 		Steel:
@@ -51,6 +79,7 @@ Weapons:
 		Silver:
 			- Silver Witcher sword
 			- Zireael Ciri's sword
+		Viroleda sword - The Witcher Sword of Destiny page 262, lizard-skin hilt, one inch about the cross guard, there is a punch in the shape of the sun in its glory with sixteen rays, alternating straight and wavy, symbolising heraldically the light and heat of the sung, it has a beautifully executed inscription in stylised lettering 2 inches beyond the sun which is a famous trademark
 	Lances
 	Halberds
 	
@@ -88,10 +117,39 @@ Plants:
 Trees:
 	More types in The Witcher: The Last Wish Book and other books in the serie
 	- Palm
+	- Birches - The Witcher Sword of Destiny page 248 in Brokilon forest
+	- Alders - The Witcher Sword of Destiny page 248 in Brokilon forest
+	- Hornbeams - The Witcher Sword of Destiny page 248 in Brokilon forest
+	- Brambles - The Witcher Sword of Destiny page 248 in Brokilon forest
+	- Junipers - The Witcher Sword of Destiny page 248 in Brokilon forest
+	- Juniper bushes - The Witcher Sword of Destiny page 249 in Brokilon forest
+	- Ferns - The Witcher Sword of Destiny page 248 in Brokilon forest
+	- Pines - The Witcher Sword of Destiny page 248 in Brokilon forest
 
 Crops:
 	More types in The Witcher: The Last Wish Book with the Sylvan called Torque
-	- Corn
+	- Corn - The Witcher: The Last Wish Page 190, eating it
+	- Cucumber - eating it
+	- Beans - Legumes, The Witcher: The Last Wish Page 190, talking about probably Cannellini Beans as white large beans, therefore they know about the existance of beans
+	- Cannellini Beans - Legumes, White large beans, The Witcher: The Last Wish Page 190
+	- Oilseed - The Witcher: The Last Wish Page 190, making oil from it
+	- Flaxseed - The Witcher: The Last Wish Page 190, making shirts from flax, cheaper than silk and more hardwearing
+	- Turnip - The Witcher: The Last Wish Page 190, eating it
+	- Carrot - The Witcher: The Last Wish Page 191, eating it
+	- Peas - Legumes, eating it
+	- Lentils - eating it
+	- Wheat - Cereal, maybe add winter wheat as a sub-type
+	- Barley - Cereal
+	- Rye - Cereal
+
+Agriculture:
+	- The three-field system - The Witcher: The Last Wish Page 191, using this system for farms
+	- Separate crops by types Cereal, Legumes for example for playing with the nitrogen for the three-field system
+
+Tools:
+	- Sharp knife - for some crops like cucumbers to get more of them
+	- Pruners - for some crops like cucumbers to get more of them or maybe just keep the shears and edit it
+	
 
 Places/Structures:
 	- Temples:
@@ -116,11 +174,34 @@ Places/Structures:
 		- Temeria's striga palace
 		- Gramp's cannibal lonely hut in the forest
 		- Nimue's tower
+		- The legendary Ys / Ys-Bneath-The-Waves - The city which was swallowed up by the sea, the city of the chasm - The Witcher Sword of Destiny page 221, near the harbour of Bremervoord, there are stairs leading down the water to the city, with cobalt blue shells on them, there are fish-like creatures guarding the city, with a bell sound playing when they come, they come when someone is going in their area, for example walking down the stairs to their city, it's right next to the Dragons Fangs, which are 2 cliffs standing out in the water
 
 Windows:
 	- Decorated multi-coloured windows
 
 Lights:
 	- Add coloured lights
+
+Transportation:
+	Land:
+		- Wagons lead by horses/oxen
+		- Carts lead by onagers - The Witcher Sword of Destiny page 189
+	Sea/Ocean:
+		- Ferry - The Witcher Sword of Destiny page 242
+		- Galley - The Witcher Sword of Destiny page 198 and The Witcher Season of Storms page 71, names: Fuchsia - 32 oars, can take a cargo of 800 tons
+		- Skiff - The Witcher Sword of Destiny page 198
+		- Cog - The Witcher Sword of Destiny page 198 and The Witcher Season of Storms page 71, names: Alke - Cidaris
+		- Galleon - The Witcher Season of Storms page 71,72 , names: Pride of Cintra - Cintra with the blue cross flag, Vertigo - three-mast, Albatross - Redenia with amaranth flag, three masts, a hundred and twenty feet in the beam, There is another galleon from Poviss mentioned in the book
+		- Freighter - The Witcher Season of Storms page 71 , names: Tetyda
+		- Schooner - The Witcher Season of Storms page 71, names: Pandora Parvi
+		- Post Clipper / Clipper - The Witcher Season of Storms page 72, Echo
+
+Villagers jobs:
+	Harbour:
+		- Pearl divers - The Witcher Sword of Destiny page 210, next to Bremervoord harbour		
+		- Sponge divers - The Witcher Sword of Destiny page 212, next to Bremervoord harbour
+		- Oyster divers - The Witcher Sword of Destiny page 212, next to Bremervoord harbour
+		- Lobster fishers - The Witcher Sword of Destiny page 212, next to Bremervoord harbour
+		- Fishermen - The Witcher Sword of Destiny page 212, next to Bremervoord harbour
 
 	

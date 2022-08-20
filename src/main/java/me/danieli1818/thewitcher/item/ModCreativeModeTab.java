@@ -61,4 +61,12 @@ public class ModCreativeModeTab {
 		}
 	};
 	
+	public static final CreativeModeTab PLANTS_TAB = new CreativeModeTab("plants") {
+		
+		@Override
+		public ItemStack makeIcon() {
+			return new ItemStack(ModItems.CUCUMBER_SEEDS.get());
+		}
+	};
+	
 }

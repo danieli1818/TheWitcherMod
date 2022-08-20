@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "thewitcher:cucumber"
+    }
+  ],
+  "result": {
+    "item": "thewitcher:cucumber_seeds"
+  }
+}

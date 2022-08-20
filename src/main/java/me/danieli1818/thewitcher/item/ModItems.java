@@ -22,6 +22,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.SwordItem;
@@ -192,6 +193,9 @@ public final class ModItems {
 	
 	public static final RegistryObject<Item> ZEFHAR_BOW = registerItem("zefhar_bow",
 			() -> new CustomModBowItem(40, 0.0F, 0.2F, new Item.Properties().tab(ModCreativeModeTab.WEAPONS_TAB).durability(500)));
+	
+	public static final RegistryObject<Item> CUCUMBER_SEEDS = registerItem("cucumber_seeds",
+			() -> new ItemNameBlockItem(ModBlocks.CUCUMBER_PLANT.get(), new Item.Properties().tab(ModCreativeModeTab.PLANTS_TAB)));
 
 	// Block Items
 	public static final RegistryObject<Item> PINK_ROSE = registerBlockItem(ModBlocks.PINK_ROSE,

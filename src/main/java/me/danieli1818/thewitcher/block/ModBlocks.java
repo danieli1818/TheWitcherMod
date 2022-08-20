@@ -7,6 +7,7 @@ import com.google.common.base.Supplier;
 import me.danieli1818.thewitcher.TheWitcher;
 import me.danieli1818.thewitcher.block.custom.CitrineLampBlock;
 import me.danieli1818.thewitcher.block.custom.SpeedyBlock;
+import me.danieli1818.thewitcher.block.custom.crops.CucumberPlantBlock;
 import me.danieli1818.thewitcher.item.ModCreativeModeTab;
 import me.danieli1818.thewitcher.item.ModItems;
 import net.minecraft.world.effect.MobEffects;
@@ -153,8 +154,7 @@ public class ModBlocks {
 			() -> new PressurePlateBlock(Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.METAL)
 					.strength(4.25F, 5.0F).requiresCorrectToolForDrops().sound(SoundType.METAL)),
 			ModCreativeModeTab.MINERALS_TAB);
-	public static final RegistryObject<Block> CITRINE_LAMP = registerBlock("citrine_lamp",
-			() -> new CitrineLampBlock(),
+	public static final RegistryObject<Block> CITRINE_LAMP = registerBlock("citrine_lamp", () -> new CitrineLampBlock(),
 			ModCreativeModeTab.EXAMPLES_TAB);
 
 	public static final RegistryObject<Block> EBONY_DOOR = registerBlock("ebony_door",
@@ -185,6 +185,9 @@ public class ModBlocks {
 	public static final RegistryObject<Block> THE_WHITE_WOLF_AND_THE_SWALLOW_WINDOW = registerBlockWithoutItem(
 			"the_white_wolf_and_the_swallow_window",
 			() -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion()));
+
+	public static final RegistryObject<Block> CUCUMBER_PLANT = registerBlockWithoutItem("cucumber_plant",
+			() -> new CucumberPlantBlock());
 
 	public static final RegistryObject<Block> SPEEDY_BLOCK = registerBlock("speedy_block",
 			() -> new SpeedyBlock(BlockBehaviour.Properties.of(Material.STONE).strength(4.0F, 5.0F)

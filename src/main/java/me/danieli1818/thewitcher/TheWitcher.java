@@ -54,6 +54,8 @@ public class TheWitcher {
 		
 		ItemBlockRenderTypes.setRenderLayer(ModBlocks.THE_WHITE_WOLF_AND_THE_SWALLOW_WINDOW.get(), RenderType.translucent());
 		
+		ItemBlockRenderTypes.setRenderLayer(ModBlocks.CUCUMBER_PLANT.get(), RenderType.cutout());
+		
 		ModItemProperties.addCustomItemProperties();
 	}
 

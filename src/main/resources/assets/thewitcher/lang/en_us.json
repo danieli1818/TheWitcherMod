@@ -55,6 +55,8 @@
 	
 	"item.thewitcher.zefhar_bow": "Zefhar Bow",
 	
+	"item.thewitcher.cucumber_seeds": "Cucumber Seeds",
+	
 	"block.thewitcher.ruby_block": "Ruby Block",
 	"block.thewitcher.ruby_stairs": "Ruby Stairs",
 	"block.thewitcher.ruby_slab": "Ruby Slab",
@@ -82,6 +84,8 @@
 	"block.thewitcher.white_rose": "White Rose",
 	
 	"block.thewitcher.the_white_wolf_and_the_swallow_window": "The White Wolf And The Swallow Window",
+	
+	"block.thewitcher.cucumber_plant": "Cucumber Plant",
 	
 	"itemGroup.minerals": "Minerals",
 	"itemGroup.examples": "Examples",
