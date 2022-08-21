@@ -48,6 +48,13 @@ Environment and biomes:
 	- Illusions:
 		- Illusion blocks maybe
 	- Pebbly Beach - The Witcher Sword of Destiny page 209, in Bremervoord port/harbour
+	- Ravines - The Witcher Sword of Destiny page 274, in Brokilon forest
+	- Wet Beechwood forest - The Witcher Sword of Destiny page 274, in Brokilon forest
+	- Stream - The Witcher Sword of Destiny page 275, in Brokilon forest
+	- Brokilon forest:
+		- Outer ring forest
+		- The belt of Trees - The Witcher Sword of Destiny page 274
+		- The Heart of Brokilon - The Witcher Sword of Destiny page 276
 
 River names:
 	Adalatte - The Witcher Sword of Destiny page 242, with a ferryman with a ferry to cross it.
@@ -71,6 +78,14 @@ Materials:
 Items:
 	- Horse collar
 	- Horseshoes
+	Special:
+	- Large silver goblet that holds the Water of Brokilon - The Witcher Sword of Destiny page 293, in Brokilon forest
+
+Blocks:
+	- Carpet of decaying leaves - The Witcher Sword of Destiny page 274, in Brokilon forest
+
+Fluids:
+	- The Water of Brokilon - The Witcher Sword of Destiny page 293, in Brokilon forest
 
 Weapons:	
 	Swords:
@@ -97,6 +112,7 @@ Races:
 	- Humans
 	- Dopplers
 	- Halflings
+	- Dryads, The Witcher Sword of Destiny page 276, in Brokilon forest
 
 Categories of abilities:
 	- Normal
@@ -125,6 +141,9 @@ Trees:
 	- Juniper bushes - The Witcher Sword of Destiny page 249 in Brokilon forest
 	- Ferns - The Witcher Sword of Destiny page 248 in Brokilon forest
 	- Pines - The Witcher Sword of Destiny page 248 in Brokilon forest
+	- Yews - The Witcher Sword of Destiny page 274 in Brokilon forest, they have girths of more than one hundred feet, some much more
+	- Hickories - The Witcher Sword of Destiny page 274 in Brokilon forest, they have girths of more than one hundred feet, some much more
+	- Beechwood - The Witcher Sword of Destiny page 274 in Brokilon forest
 
 Crops:
 	More types in The Witcher: The Last Wish Book with the Sylvan called Torque
@@ -175,6 +194,12 @@ Places/Structures:
 		- Gramp's cannibal lonely hut in the forest
 		- Nimue's tower
 		- The legendary Ys / Ys-Bneath-The-Waves - The city which was swallowed up by the sea, the city of the chasm - The Witcher Sword of Destiny page 221, near the harbour of Bremervoord, there are stairs leading down the water to the city, with cobalt blue shells on them, there are fish-like creatures guarding the city, with a bell sound playing when they come, they come when someone is going in their area, for example walking down the stairs to their city, it's right next to the Dragons Fangs, which are 2 cliffs standing out in the water
+		- Living wood cottages or tree houses of the dryads in Brokilon forest - The Witcher Sword of Destiny page 277, in Brokilon forest
+	- General:
+		- Elven ruins
+		- Battlefields
+		- Stone bridge - The Witcher Sword of Destiny page 275, in Brokilon forest, can be with a troll
+		- Wooden bridge, can be with a troll
 
 Windows:
 	- Decorated multi-coloured windows
@@ -203,5 +228,10 @@ Villagers jobs:
 		- Oyster divers - The Witcher Sword of Destiny page 212, next to Bremervoord harbour
 		- Lobster fishers - The Witcher Sword of Destiny page 212, next to Bremervoord harbour
 		- Fishermen - The Witcher Sword of Destiny page 212, next to Bremervoord harbour
+
+Villagers:
+	- Settlers, traveling in the world to settle and build a new village
+	- Soldiers, going to the front of a battlefield
+	
 
 	

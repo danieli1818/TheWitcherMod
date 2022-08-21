@@ -3,6 +3,7 @@ package me.danieli1818.thewitcher.item.custom.example;
 import java.util.List;
 
 import me.danieli1818.thewitcher.item.ModItems;
+import me.danieli1818.thewitcher.sound.ModSounds;
 import me.danieli1818.thewitcher.util.InventoryUtils;
 import me.danieli1818.thewitcher.util.ModTags;
 import net.minecraft.client.gui.screens.Screen;
@@ -11,6 +12,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -44,6 +46,8 @@ public class DowsingRodItem extends Item {
 					if (InventoryUtils.hasItemInInventory(player.getInventory(), ModItems.DATA_TABLET.get(), null)) {
 						addMessageToDataTablet(positionedClicked, player, currentBlock);
 					}
+					pContext.getLevel().playSound(player, positionedClicked, ModSounds.DOWSING_ROD_FOUND_ORE.get(),
+							SoundSource.BLOCKS, 1.0F, 1.0F);
 					break;
 				}
 			}
@@ -65,8 +69,8 @@ public class DowsingRodItem extends Item {
 	}
 
 	private void addMessageToDataTablet(BlockPos blockPos, Player player, Block block) {
-		ItemStack dataTabletItemStack = player.getInventory()
-				.getItem(InventoryUtils.getFirstItemInInventory(player.getInventory(), ModItems.DATA_TABLET.get(), null));
+		ItemStack dataTabletItemStack = player.getInventory().getItem(
+				InventoryUtils.getFirstItemInInventory(player.getInventory(), ModItems.DATA_TABLET.get(), null));
 		CompoundTag tag = new CompoundTag();
 		tag.putString(DataTabletItem.DATA_NBT_TAG, getMessage(blockPos, player, block));
 		dataTabletItemStack.setTag(tag);

@@ -96,8 +96,18 @@
 	"itemGroup.decoration_blocks": "Decoration Blocks",
 	
 	"item.thewitcher.dowsing_rod.no_valuables": "No valuables found!",
+	
 	"tooltip.thewitcher.dowsing_rod.tooltip.shift": "Right click on a block to find valuables!",
 	"tooltip.thewitcher.dowsing_rod.tooltip": "Press §eSHIFT§r for more information!",
 	
-	"tooltip.thewitcher.block.speedy_block": "The block that gives you speed!"
+	"tooltip.thewitcher.block.speedy_block": "The block that gives you speed!",
+	
+	"sounds.thewitcher.dowsing_rod_found_ore": "Dowsing Rod Found Item Sound",
+	
+	"sounds.thewitcher.citrine_lamp_break": "Citrine Lamp Breaking Sound",
+	"sounds.thewitcher.citrine_lamp_step": "Citrine Lamp Steps Sound",
+	"sounds.thewitcher.citrine_lamp_place": "Citrine Lamp Placing Sound",
+	"sounds.thewitcher.citrine_lamp_hit": "Citrine Lamp Hitting Sound",
+	"sounds.thewitcher.citrine_lamp_fall": "Citrine Lamp Falling Sound"
+	
 }

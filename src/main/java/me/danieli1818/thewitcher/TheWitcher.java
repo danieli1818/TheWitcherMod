@@ -3,6 +3,7 @@ package me.danieli1818.thewitcher;
 import me.danieli1818.thewitcher.block.ModBlocks;
 import me.danieli1818.thewitcher.item.ModItems;
 import me.danieli1818.thewitcher.painting.ModPaintings;
+import me.danieli1818.thewitcher.sound.ModSounds;
 import me.danieli1818.thewitcher.util.ModItemProperties;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -27,6 +28,8 @@ public class TheWitcher {
 		ModBlocks.register(modEventBus);
 		
 		ModPaintings.register(modEventBus);
+		
+		ModSounds.register(modEventBus);
 
 		modEventBus.addListener(this::setup);
 		modEventBus.addListener(this::clientSetup);
