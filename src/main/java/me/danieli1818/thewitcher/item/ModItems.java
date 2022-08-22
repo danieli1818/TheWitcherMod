@@ -13,6 +13,7 @@ import me.danieli1818.thewitcher.item.custom.fuel.CoalCokeItem;
 import me.danieli1818.thewitcher.item.custom.weapons.bows.CustomModBowItem;
 import me.danieli1818.thewitcher.item.custom.weapons.swords.SteelSwordItem;
 import me.danieli1818.thewitcher.item.custom.weapons.swords.attributes.EffectSwordAttribute;
+import me.danieli1818.thewitcher.sound.ModSounds;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -24,6 +25,7 @@ import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.RecordItem;
 import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.level.block.Block;
@@ -196,6 +198,9 @@ public final class ModItems {
 	
 	public static final RegistryObject<Item> CUCUMBER_SEEDS = registerItem("cucumber_seeds",
 			() -> new ItemNameBlockItem(ModBlocks.CUCUMBER_PLANT.get(), new Item.Properties().tab(ModCreativeModeTab.PLANTS_TAB)));
+	
+	public static final RegistryObject<Item> RENAISSANCE_STRINGS_MUSIC_DISC = registerItem("renaissance_strings_music_disc",
+			() -> new RecordItem(4, ModSounds.RENAISSANCE_STRINGS, new Item.Properties().tab(ModCreativeModeTab.MUSIC).stacksTo(1)));
 
 	// Block Items
 	public static final RegistryObject<Item> PINK_ROSE = registerBlockItem(ModBlocks.PINK_ROSE,

@@ -57,6 +57,9 @@
 	
 	"item.thewitcher.cucumber_seeds": "Cucumber Seeds",
 	
+	"item.thewitcher.renaissance_strings_music_disc": "Renaissance Strings",
+	"item.thewitcher.renaissance_strings_music_disc.desc": "Renaissance Strings Created by TheoTer",
+	
 	"block.thewitcher.ruby_block": "Ruby Block",
 	"block.thewitcher.ruby_stairs": "Ruby Stairs",
 	"block.thewitcher.ruby_slab": "Ruby Slab",
@@ -94,6 +97,7 @@
 	"itemGroup.armor": "Armor",
 	"itemGroup.flowers": "Flowers",
 	"itemGroup.decoration_blocks": "Decoration Blocks",
+	"itemGroup.music": "Music",
 	
 	"item.thewitcher.dowsing_rod.no_valuables": "No valuables found!",
 	

@@ -34,5 +34,13 @@
 		"sounds": [
 			"thewitcher:citrine_lamp_fall"
 		]
+	},
+	"renaissance_strings": {
+		"sounds": [
+			{
+				"name": "thewitcher:renaissance_strings",
+				"stream": true
+			}
+		]
 	}
 }

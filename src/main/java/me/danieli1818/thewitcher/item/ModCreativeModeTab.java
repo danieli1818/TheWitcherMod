@@ -69,4 +69,12 @@ public class ModCreativeModeTab {
 		}
 	};
 	
+	public static final CreativeModeTab MUSIC = new CreativeModeTab("music") {
+		
+		@Override
+		public ItemStack makeIcon() {
+			return new ItemStack(ModItems.RENAISSANCE_STRINGS_MUSIC_DISC.get());
+		}
+	};
+	
 }
