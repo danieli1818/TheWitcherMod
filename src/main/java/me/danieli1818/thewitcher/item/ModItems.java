@@ -208,5 +208,8 @@ public final class ModItems {
 
 	public static final RegistryObject<Item> THE_WHITE_WOLF_AND_THE_SWALLOW_WINDOW = registerBlockItem(
 			ModBlocks.THE_WHITE_WOLF_AND_THE_SWALLOW_WINDOW, ModCreativeModeTab.DECORATION_BLOCKS_TAB);
+	
+	public static final RegistryObject<Item> EBONY_LOG = registerBlockItem(
+			ModBlocks.EBONY_LOG, ModCreativeModeTab.WOOD);
 
 }

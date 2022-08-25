@@ -77,4 +77,12 @@ public class ModCreativeModeTab {
 		}
 	};
 	
+	public static final CreativeModeTab WOOD = new CreativeModeTab("wood") {
+		
+		@Override
+		public ItemStack makeIcon() {
+			return new ItemStack(ModItems.EBONY_LOG.get());
+		}
+	};
+	
 }

@@ -8,6 +8,9 @@ import me.danieli1818.thewitcher.TheWitcher;
 import me.danieli1818.thewitcher.block.custom.CitrineLampBlock;
 import me.danieli1818.thewitcher.block.custom.SpeedyBlock;
 import me.danieli1818.thewitcher.block.custom.crops.CucumberPlantBlock;
+import me.danieli1818.thewitcher.block.custom.trees.LogBlock;
+import me.danieli1818.thewitcher.block.custom.types.FlammableBlock;
+import me.danieli1818.thewitcher.block.custom.types.FlammableRotatedPillarBlock;
 import me.danieli1818.thewitcher.item.ModCreativeModeTab;
 import me.danieli1818.thewitcher.item.ModItems;
 import net.minecraft.world.effect.MobEffects;
@@ -31,6 +34,7 @@ import net.minecraft.world.level.block.StoneButtonBlock;
 import net.minecraft.world.level.block.TrapDoorBlock;
 import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -188,7 +192,22 @@ public class ModBlocks {
 
 	public static final RegistryObject<Block> CUCUMBER_PLANT = registerBlockWithoutItem("cucumber_plant",
 			() -> new CucumberPlantBlock());
-
+	
+	public static final RegistryObject<Block> STRIPPED_EBONY_LOG = registerBlock("stripped_ebony_log",
+			() -> new FlammableRotatedPillarBlock(Properties.copy(Blocks.STRIPPED_OAK_LOG), 5, 5), ModCreativeModeTab.WOOD);
+	
+	public static final RegistryObject<Block> EBONY_LOG = registerBlockWithoutItem("ebony_log",
+			() -> new LogBlock(STRIPPED_EBONY_LOG.get()));
+	
+	public static final RegistryObject<Block> STRIPPED_EBONY_WOOD = registerBlock("stripped_ebony_wood",
+			() -> new FlammableRotatedPillarBlock(Properties.copy(Blocks.STRIPPED_OAK_WOOD), 5, 5), ModCreativeModeTab.WOOD);
+	
+	public static final RegistryObject<Block> EBONY_WOOD = registerBlock("ebony_wood",
+			() -> new LogBlock(STRIPPED_EBONY_WOOD.get()), ModCreativeModeTab.WOOD);
+	
+	public static final RegistryObject<Block> EBONY_PLANKS = registerBlock("ebony_planks",
+			() -> new FlammableBlock(Properties.copy(Blocks.OAK_PLANKS), 20, 5), ModCreativeModeTab.WOOD);
+	
 	public static final RegistryObject<Block> SPEEDY_BLOCK = registerBlock("speedy_block",
 			() -> new SpeedyBlock(BlockBehaviour.Properties.of(Material.STONE).strength(4.0F, 5.0F)
 					.requiresCorrectToolForDrops().sound(SoundType.STONE)),
