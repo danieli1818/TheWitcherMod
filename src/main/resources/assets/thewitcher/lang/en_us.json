@@ -90,6 +90,12 @@
 	
 	"block.thewitcher.cucumber_plant": "Cucumber Plant",
 	
+	"block.thewitcher.ebony_log": "Ebony Log",
+	"block.thewitcher.ebony_wood": "Ebony Wood",
+	"block.thewitcher.ebony_planks": "Ebony Planks",
+	"block.thewitcher.stripped_ebony_log": "Stripped Ebony Log",
+	"block.thewitcher.stripped_ebony_wood": "Stripped Ebony Wood",
+	
 	"itemGroup.minerals": "Minerals",
 	"itemGroup.examples": "Examples",
 	"itemGroup.mod_tools": "Tools",
@@ -97,7 +103,10 @@
 	"itemGroup.armor": "Armor",
 	"itemGroup.flowers": "Flowers",
 	"itemGroup.decoration_blocks": "Decoration Blocks",
+	"itemGroup.plants": "Plants",
 	"itemGroup.music": "Music",
+	"itemGroup.wood": "Wood",
+	
 	
 	"item.thewitcher.dowsing_rod.no_valuables": "No valuables found!",
 	
