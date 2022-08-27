@@ -59,6 +59,9 @@ public class TheWitcher {
 		
 		ItemBlockRenderTypes.setRenderLayer(ModBlocks.CUCUMBER_PLANT.get(), RenderType.cutout());
 		
+		ItemBlockRenderTypes.setRenderLayer(ModBlocks.EBONY_LEAVES.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(ModBlocks.EBONY_SAPLING.get(), RenderType.cutout());
+		
 		ModItemProperties.addCustomItemProperties();
 	}
 

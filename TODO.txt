@@ -180,6 +180,7 @@ Places/Structures:
 		- Add Inns with a notice board outside
 		- Add alderman's house
 		- Add marketplace
+		- Add apothecary's shop
 		Port villages:
 			- Add docks
 	- Towns:
@@ -200,6 +201,7 @@ Places/Structures:
 		- Battlefields
 		- Stone bridge - The Witcher Sword of Destiny page 275, in Brokilon forest, can be with a troll
 		- Wooden bridge, can be with a troll
+		- Circus
 
 Windows:
 	- Decorated multi-coloured windows
@@ -228,10 +230,23 @@ Villagers jobs:
 		- Oyster divers - The Witcher Sword of Destiny page 212, next to Bremervoord harbour
 		- Lobster fishers - The Witcher Sword of Destiny page 212, next to Bremervoord harbour
 		- Fishermen - The Witcher Sword of Destiny page 212, next to Bremervoord harbour
+	General:
+		- Tailor
+		- Blacksmith
+		- Apothecary
+		- Bard
+	Circus:
+		- Acrobats
+		- Fire performers
+		- Archers
+		
 
 Villagers:
 	- Settlers, traveling in the world to settle and build a new village
-	- Soldiers, going to the front of a battlefield
+	- Soldiers, going to the front of a battlefield,
+	- Merchants, traveling in the world from village to village with trades on wagons and carts
+	- Bandits, attacking bypassers on roads
+	
 	
 
 	

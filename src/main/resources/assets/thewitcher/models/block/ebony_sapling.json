@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "thewitcher:block/ebony_sapling"
+  }
+}

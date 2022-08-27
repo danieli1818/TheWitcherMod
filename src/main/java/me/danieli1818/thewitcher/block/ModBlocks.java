@@ -9,10 +9,12 @@ import me.danieli1818.thewitcher.block.custom.CitrineLampBlock;
 import me.danieli1818.thewitcher.block.custom.SpeedyBlock;
 import me.danieli1818.thewitcher.block.custom.crops.CucumberPlantBlock;
 import me.danieli1818.thewitcher.block.custom.trees.LogBlock;
+import me.danieli1818.thewitcher.block.custom.trees.ModLeavesBlock;
 import me.danieli1818.thewitcher.block.custom.types.FlammableBlock;
 import me.danieli1818.thewitcher.block.custom.types.FlammableRotatedPillarBlock;
 import me.danieli1818.thewitcher.item.ModCreativeModeTab;
 import me.danieli1818.thewitcher.item.ModItems;
+import me.danieli1818.thewitcher.world.feature.tree.EbonyTreeGrower;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -27,6 +29,7 @@ import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraft.world.level.block.GlassBlock;
 import net.minecraft.world.level.block.PressurePlateBlock;
 import net.minecraft.world.level.block.PressurePlateBlock.Sensitivity;
+import net.minecraft.world.level.block.SaplingBlock;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.StairBlock;
@@ -207,6 +210,12 @@ public class ModBlocks {
 	
 	public static final RegistryObject<Block> EBONY_PLANKS = registerBlock("ebony_planks",
 			() -> new FlammableBlock(Properties.copy(Blocks.OAK_PLANKS), 20, 5), ModCreativeModeTab.WOOD);
+	
+	public static final RegistryObject<Block> EBONY_LEAVES = registerBlock("ebony_leaves",
+			() -> new ModLeavesBlock(Properties.copy(Blocks.OAK_LEAVES)), ModCreativeModeTab.WOOD);
+	
+	public static final RegistryObject<Block> EBONY_SAPLING = registerBlock("ebony_sapling",
+			() -> new SaplingBlock(new EbonyTreeGrower(), Properties.copy(Blocks.OAK_SAPLING)), ModCreativeModeTab.WOOD);
 	
 	public static final RegistryObject<Block> SPEEDY_BLOCK = registerBlock("speedy_block",
 			() -> new SpeedyBlock(BlockBehaviour.Properties.of(Material.STONE).strength(4.0F, 5.0F)
